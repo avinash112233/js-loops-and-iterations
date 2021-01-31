@@ -1,0 +1,475 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+Test:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test
+  only:
+    refs:
+      - master
+
+Test01:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test01
+  only:
+    refs:
+      - 1-task01-program-to-write-a-js-function
+
+Practice01:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice01.js
+  only:
+    refs:
+      - 1-task01-program-to-write-a-js-function
+
+Test02:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test02
+  only:
+    refs:
+      - 2-task02-program-to-write-a-js-function-for-multiples
+
+Practice02:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice02.js
+  only:
+    refs:
+      - 2-task02-program-to-write-a-js-function-for-multiples
+
+Test03:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test03
+  only:
+    refs:
+      - 3-task03-program-to-write-js-function-to-compute-sum-of-cubes-of-all-integers
+
+Practice03:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice03.js
+  only:
+    refs:
+      - 3-task03-program-to-write-js-function-to-compute-sum-of-cubes-of-all-integers
+
+Test04:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test04
+  only:
+    refs:
+      - 4-task04-program-to-find-the-maximum-integer
+
+Practice04:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice04.js
+  only:
+    refs:
+      - 4-task04-program-to-find-the-maximum-integer
+
+Test05:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test05
+  only:
+    refs:
+      - 5-task05-program-to-calculates-the-sum-of-multiples-of-3-or-5-before-a-given-number
+
+Practice05:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice05.js
+  only:
+    refs:
+      - 5-task05-program-to-calculates-the-sum-of-multiples-of-3-or-5-before-a-given-number
+
+Test06:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test06
+  only:
+    refs:
+      - 6-task06-write-a-js-program-to-create-a-function-which-returns-the-smallest-round-number
+
+Practice06:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice06.js
+  only:
+    refs:
+      - 6-task06-write-a-js-program-to-create-a-function-which-returns-the-smallest-round-number
+
+Test07:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test07
+  only:
+    refs:
+      - 7-task07-write-a-program-to-create-a-function-for-factorial
+
+Practice07:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice07.js
+  only:
+    refs:
+      - 7-task07-write-a-program-to-create-a-function-for-factorial
+
+Test08:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test08
+  only:
+    refs:
+      - 8-task08-write-a-program-in-js-to-perform-recursive-division
+
+Practice08:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice08.js
+  only:
+    refs:
+      - 8-task08-write-a-program-in-js-to-perform-recursive-division
+
+Test09:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test09
+  only:
+    refs:
+      - 9-task09-program-in-js-to-create-function-which-returns-the-sum-of-even-digits-in-a-given-integer
+
+Practice09:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice09.js
+  only:
+    refs:
+      - 9-task09-program-in-js-to-create-function-which-returns-the-sum-of-even-digits-in-a-given-integer
+
+Test10:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test10
+  only:
+    refs:
+      - 10-task10-program-to-create-a-function-for-sum-of-series
+
+Practice10:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice10.js
+  only:
+    refs:
+      - 10-task10-program-to-create-a-function-for-sum-of-series
+
+Test11:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test11
+  only:
+    refs:
+      - 11-task11-program-to-create-a-function-which-calculates-the-total-number-of-prime-numbers
+
+Practice11:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice11.js
+  only:
+    refs:
+      - 11-task11-program-to-create-a-function-which-calculates-the-total-number-of-prime-numbers
+
+Test12:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test12
+  only:
+    refs:
+      - 12-task12-program-to-create-a-function-for-armstrong-number
+
+Practice12:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice12.js
+  only:
+    refs:
+      - 12-task12-program-to-create-a-function-for-armstrong-number
+
+Test13:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test13
+  only:
+    refs:
+      - 13-task13-program-to-create-a-function-which-returns-the-smallest-prime-number
+
+Practice13:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice13.js
+  only:
+    refs:
+      - 13-task13-program-to-create-a-function-which-returns-the-smallest-prime-number
+
+Test14:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test14
+  only:
+    refs:
+      - 14-task14-program-to-create-a-function-which-returns-the-number-of-times-required
+
+Practice14:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice14.js
+  only:
+    refs:
+      - 14-task14-program-to-create-a-function-which-returns-the-number-of-times-required
+
+Test15:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test15
+  only:
+    refs:
+      - 15-task15-program-that-contains-function-pow-x-n-which-takes-two-arguments
+
+Practice15:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice15.js
+  only:
+    refs:
+      - 15-task15-program-that-contains-function-pow-x-n-which-takes-two-arguments
+
+Test16:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test16
+  only:
+    refs:
+      - 16-task16-program-to-return-n-th-entry-of-fibonacci-series
+
+Practice16:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice16.js
+  only:
+    refs:
+      - 16-task16-program-to-return-n-th-entry-of-fibonacci-series
+
+Test17:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test17
+  only:
+    refs:
+      - 17-task17-program-to-create-function-that-returns-factorial-of-given-number
+
+Practice17:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice17.js
+  only:
+    refs:
+      - 17-task17-program-to-create-function-that-returns-factorial-of-given-number
+
+Test18:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test18
+  only:
+    refs:
+      - 18-task18-program-to-create-function-returns-gdc-of-two-numbers
+
+Practice18:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice18.js
+  only:
+    refs:
+      - 18-task18-program-to-create-function-returns-gdc-of-two-numbers
+
+Test19:
+  tags:
+    - looping
+  timeout: 3 minutes 30 seconds
+  script:
+    - git config --global user.email "jindal.swapnil2@gmail.com"
+    - git config --global user.name "Swapnil"
+    - git subtree add --prefix specs/ https://workspace.konfinity.com/swapnil/looping-and-iteration-specs.git master
+    - npm install
+    - npm run test19
+  only:
+    refs:
+      - 19-task19-program-to-create-function-that-returns-sum-of-series
+
+Practice19:
+  tags:
+    - practice
+  timeout: 3 minutes 30 seconds
+  script:
+    - node practice19.js
+  only:
+    refs:
+      - 19-task19-program-to-create-function-that-returns-sum-of-series
